@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\assets",
+    "\\app\\channels",
+    "\\app\\channels\\application_cable",
+    "\\app\\controllers",
+    "\\app\\views",
+    "\\app\\views\\counters",
+    "\\app\\views\\students",
+    "\\config"
   ],
-  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

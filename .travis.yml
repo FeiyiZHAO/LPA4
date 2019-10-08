@@ -12,10 +12,10 @@ script:
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 deploy:
-  provider: heroku
-  api_key:
+provider: heroku
+api_key:
     secure: TRxY7+19rbnIsKdj6OBSg1DctpORkbY+3AuddK2pdWtLzKt2gj2b1vpQpj3Tcqd7PTjBwRnxE9El8h/V9f/KkaC4JbBRWUEuBNb8Jzu0h7TiPgSYfeQZk/mXeAkdQMdrf1ZKhB42BGzibeMQTogHWq1ATABYn1Aqvfjm8kOvpAj7RbjBKrTJXmsHArm8xXmjFqzTicoKvRn3EIaEYCFrDw52JbPLv9gD0lg2nznBAa9win/jRtz4VdWL+miI689bDWCIXbWSjxI1SuYd7oM4Pewja/QiqC+P0QbPkoFo048JP+kp+EsgOmINQyt1hYn+rDFNkdgL6KIEziY/8FG4KM6gOHm1MP0x3asuvENIahueXDxRbZCQY2DFg0FO17Dsouo30N7b0U3wYHC8IuFqnGNxqYnUIGrByaTOwR+Tbz055tv7MmKt0V4W2le/A5OKgyC8dgKzif1EVMERdu0HNeCC5Yfi996sp2DFsYnYuSFDF+z75u5yZw0ZJa9RoJK5BUgMsTfdS+3eddWhN3Zod2WzjUkFc9XvMvCwxQZ/Q/DBoQjQHfSavU6QGtLNZqM9J23xgQpsldsE96+08JhbJg1kYxEEOlnuGzMfESqZ5ws3x6EUOvi8lmYrQrYnYP+INclWbBp+RAlcneInPJqwh/DvAO8NF1vSJhJza5823DA=
-  app: lp4a-fzhao
-  run:
+app: lp4a-fzhao
+run:
     - "bundle install --without development test"
     - "bundle exec rails db:migrate"
